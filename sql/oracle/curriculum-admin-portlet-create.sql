@@ -83,18 +83,11 @@ declare
 begin
 	-- create the implementation
 	foo := acs_sc_impl.new (
-		'portal_datasource',
-		'curriculum_admin_portlet',
-		'curriculum_admin_portlet'
+            impl_contract_name => 'portal_datasource',
+            impl_name => 'curriculum_admin_portlet',
+            impl_pretty_name => 'Curriculum Admin Portlet',
+            impl_owner_name => 'curriculum_admin_portlet'
 	);
-
-end;
-/
-show errors
-
-declare
-	foo integer;
-begin
 
 	-- add all the hooks
 	foo := acs_sc_impl.new_alias (
@@ -152,14 +145,6 @@ begin
 	       'curriculum_admin_portlet::remove_self_from_page',
 	       'TCL'
 	);
-
-end;
-/
-show errors
-
-declare
-	foo integer;
-begin
 
 	-- Add the binding
 	acs_sc_binding.new (
