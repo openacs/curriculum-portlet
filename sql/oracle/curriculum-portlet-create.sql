@@ -82,9 +82,10 @@ declare
 begin
 	-- create the implementation
 	foo := acs_sc_impl.new (
-		'portal_datasource',
-		'curriculum_portlet',
-		'curriculum_portlet'
+            impl_contract_name => 'portal_datasource',
+            impl_name => 'curriculum_portlet',
+            impl_pretty_name => 'Curriculum Portlet',
+            impl_owner_name => 'curriculum_portlet'
 	);
 
 end;
