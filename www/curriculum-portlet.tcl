@@ -12,11 +12,7 @@ ad_page_contract {
 array set config $cf
 
 set shaded_p $config(shaded_p)
-set list_of_package_ids $config(package_id)
-
-if {[llength $list_of_package_ids] > 1} {
-    # We have a problem!
-    return -code error "There should be only one instance of curriculum for admin purposes"
-}        
+set list_of_package_ids [lsort $config(package_id)]
+set one_instance_p [ad_decode [llength $list_of_package_ids] 1 1 0]
 
 ad_return_template 
