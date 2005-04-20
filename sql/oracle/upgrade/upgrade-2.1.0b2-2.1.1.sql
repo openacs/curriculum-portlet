@@ -1,0 +1,1 @@
+update portal_element_map set pretty_name ='#curriculum.Curriculum_1#'  where pretty_name = 'Curriculum';

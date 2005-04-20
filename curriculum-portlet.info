@@ -7,12 +7,12 @@
     <initial-install-p>f</initial-install-p>
     <singleton-p>t</singleton-p>
     
-    <version name="2.1.0b2" url="http://openacs.org/repository/download/apm/curriculum-portlet-2.1.0b2.apm">
+    <version name="2.1.1" url="http://openacs.org/repository/download/apm/curriculum-portlet-2.1.1.apm">
         <owner url="mailto:ola@polyxena.net">Ola Hansson</owner>
         <release-date>2004-03-10</release-date>
         <vendor url="http://www.polyxena.net">Polyxena</vendor>
 
-        <provides url="curriculum-portlet" version="2.1.0b2"/>
+        <provides url="curriculum-portlet" version="2.1.1"/>
         <requires url="curriculum" version="0.1d"/>
         <requires url="new-portal" version="0.1a"/>
 
