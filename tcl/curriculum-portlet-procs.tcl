@@ -22,7 +22,7 @@ namespace eval curriculum_portlet {
 
     ad_proc -public get_pretty_name {
     } {
-        return "Curriculum"
+        return "#curriculum.Curriculum_1#"
     }
 
     ad_proc -public link {
