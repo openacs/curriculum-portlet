@@ -13,5 +13,5 @@
 
 </if>
 <else>
-  #new-portal.when_portlet_shaded#
+  &nbsp;
 </else>
